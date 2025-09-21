@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vote Your Favorite Song</title>
+  <style>
+    .body-style {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .heading {
+      color: #ff3333;
+      margin: 25px 0 20px;
+    }
+
+    .paragraph {
+      color: #1affff;
+      font-size: 20px;
+    }
+
+    .form-style {
+      background-color: #111;
+      padding: 25px;
+      border-radius: 14px;
+      width: 50%;
+      margin: 20px auto;
+      text-align: left;
+    }
+
+    .label-style {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffcc00;
+    }
+
+    .text-input, .textarea-input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #222;
+      color: white;
+      font-size: 16px;
+      border: 1px solid #555;
+      margin-bottom: 15px;
+    }
+
+    .radio-group, .checkbox-group {
+      margin: 10px 0 20px 0;
+    }
+
+    .radio-input, .checkbox-input {
+      margin-right: 8px;
+      margin-left: 10px;
+    }
+
+    .submit-btn {
+      background-color: #FF4500;
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 12px 40px;
+      border-radius: 10px;
+      border: none;
+    }
+
+
+    .button {
+      display: block;
+      width: 300px;
+      margin: 30px auto;
+      padding: 15px;
+      text-align: center;
+      background-color: #ff3333;
+      color: white;
+      font-size: 24px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body class="body-style">
+
+  <h1 class="heading">Vote Your Favorite Song</h1>
+  <p class="paragraph">Fill the details below to submit your vote</p>
+
+  <form class="form-style">
+    <label class="label-style" for="songname">Song Name:</label><br>
+    <input class="text-input" type="text" id="songname" name="songname"><br>
+
+    <label class="label-style">Genre:</label><br>
+    <div class="radio-group">
+      <input class="radio-input" type="radio" name="genre" value="pop"> Pop
+      <input class="radio-input" type="radio" name="genre" value="rock"> Rock
+      <input class="radio-input" type="radio" name="genre" value="hiphop"> Hip-Hop
+      <input class="radio-input" type="radio" name="genre" value="jazz"> Jazz
+      <input class="radio-input" type="radio" name="genre" value="classical"> Classical
+      <input class="radio-input" type="radio" name="genre" value="edm"> EDM
+    </div>
+
+    <label class="label-style">Mood:</label><br>
+    <div class="checkbox-group">
+      <input class="checkbox-input" type="checkbox" name="mood" value="peaceful"> Peaceful
+      <input class="checkbox-input" type="checkbox" name="mood" value="rage"> Rage
+    </div>
+
+    <label class="label-style" for="description">Description:</label><br>
+    <textarea class="textarea-input" id="description" rows="4"></textarea><br>
+
+    <input class="submit-btn" type="submit" value="Submit Vote">
+  </form>
+
+  <a href="wb4.html" class="button">See Recommended Songs</a>
+
+</body>
+</html>

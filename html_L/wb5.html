@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1 {
+      color: red;
+      margin: 25px 0 20px;
+    }
+
+    form {
+      background-color: #111;
+      padding: 25px;
+      border-radius: 14px;
+      width: 55%;
+      margin: 20px auto;
+      text-align: left;
+    }
+
+    label {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffcc00;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #222;
+      color: white;
+      font-size: 16px;
+      border: 1px solid #555;
+      margin-bottom: 15px;
+    }
+
+    input[type="submit"] {
+      background-color: #FF4500;
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 12px 40px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #FF6347;
+    }
+
+    .checkbox-group, .radio-group {
+      margin: 10px 0 20px 0;
+    }
+
+    input[type="checkbox"], input[type="radio"] {
+      margin-right: 8px;
+      margin-left: 10px;
+      transform: scale(1.2);
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Contact Us</h1>
+
+  <form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email"><br>
+
+    <label for="number">Phone no.:</label><br>
+    <input type="text" id="number" name="number"><br>
+
+    <label>Preferred Contact:</label><br>
+    <div class="radio-group">
+      <input type="radio" name="contact" value="email"> Email
+      <input type="radio" name="contact" value="phone"> Phone
+    </div>
+
+    <label>Enquire about :</label><br>
+    <div class="checkbox-group">
+      <input type="checkbox" name="plan" value="diamond"> Diamond Plan
+      <input type="checkbox" name="plan" value="gold"> Gold Plan
+      <input type="checkbox" name="plan" value="silver"> Silver Plan
+      <input type="checkbox" name="plan" value="general"> General Training
+    </div>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" rows="5"></textarea><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Submit Favourite Book</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+      padding: 20px;
+      margin: 0;
+    }
+
+    
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #ee0979;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    
+    .form-container {
+      background-color: #111;
+      padding: 25px;
+      border-radius: 14px;
+      max-width: 600px;
+      margin: 0 auto 50px auto;
+     }
+
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #ffcc00;
+      font-size: 16px;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #444;
+      background-color: #222;
+      color: white;
+      font-size: 16px;
+    }
+
+    .form-textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #444;
+      background-color: #222;
+      color: white;
+      font-size: 16px;
+      
+    }
+
+    
+    .form-group p {
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #ffcc00;
+    }
+
+    .form-option {
+      display: inline-block;
+      margin-right: 20px;
+      font-weight: normal;
+      color: #ccc;
+    }
+
+    .form-option input {
+      margin-right: 10px;
+     
+    }
+
+   
+    .form-btn {
+      display: block;
+      width: 50%;
+      margin: 20px auto 0 auto;
+      padding: 12px 0;
+      background: #ff00cc;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+      
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <h2>Submit Your Favourite Book</h2>
+
+  <form class="form-container">
+    <div class="form-group">
+      <label for="bookname" class="form-label">Book Name:</label>
+      <input type="text" id="bookname" name="bookname"  class="form-input">
+    </div>
+
+    <div class="form-group">
+      <label for="desc" class="form-label">Description:</label>
+      <textarea id="desc" name="desc" rows="4"  class="form-textarea"></textarea>
+    </div>
+
+    <div class="form-group">
+      <p>Genre:</p>
+      <label class="form-option"><input type="radio" name="genre" value="Science Fiction"> Science Fiction</label>
+      <label class="form-option"><input type="radio" name="genre" value="Horror"> Horror</label>
+      <label class="form-option"><input type="radio" name="genre" value="History"> History</label>
+      <label class="form-option"><input type="radio" name="genre" value="Fantasy"> Fantasy</label>
+    </div>
+
+    <div class="form-group">
+      <p>Available Languages:</p>
+      <label class="form-option"><input type="checkbox" name="lang" value="English"> English</label>
+      <label class="form-option"><input type="checkbox" name="lang" value="German"> German</label>
+      <label class="form-option"><input type="checkbox" name="lang" value="French"> French</label>
+      <label class="form-option"><input type="checkbox" name="lang" value="Japanese"> Japanese</label>
+    </div>
+
+    <button type="submit" class="form-btn">Submit</button>
+  </form>
+
+</body>
+</html>
